@@ -3,7 +3,7 @@ pragma solidity >=0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract AuditoryERC20 is ERC20 {
+contract AuditoryApToken is ERC20 {
     constructor() ERC20("ADY-AP Tokens", "ADY-AP") {}
 
     //  TODO: Currently public to ease testing.

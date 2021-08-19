@@ -2,9 +2,9 @@
 pragma solidity >=0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./AuditoryERC20.sol";
+import "./AuditoryApToken.sol";
 
-contract AuditoryAssetPool is AuditoryERC20 {
+contract AuditoryAssetPool is AuditoryApToken {
     constructor() {
         manager = msg.sender;
     }

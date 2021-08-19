@@ -51,7 +51,11 @@ contract AuditoryApManager {
         return artistWithAps[_artist];
     }
 
-    function getArtistNfts(address _senderArtist) external view returns (NftInfo[] memory) {
+    function getArtistNfts(address _senderArtist)
+        external
+        view
+        returns (NftInfo[] memory)
+    {
         address _artist = address(_senderArtist);
         return artistWithNft[_artist];
     }
