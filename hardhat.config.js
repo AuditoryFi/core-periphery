@@ -8,6 +8,12 @@ const mnemonic = process.env.MNEMONIC;
 module.exports = {
   solidity: "0.8.0",
   networks: {
+    hardhat: {
+      mining: {
+        auto: true,
+        interval: 1000,
+      },
+    },
     matic: {
       chainId: 137,
       url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_ID}`,
